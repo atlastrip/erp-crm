@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Admin = mongoose.model('Admin');
 
-require('dotenv').config({ path: '.variables.env' });
+require('dotenv').config({ path: '.env' });
 
 const logout = async (req, res) => {
   try {

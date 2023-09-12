@@ -5,7 +5,7 @@ const path = require('path');
 const cors = require('cors');
 
 const cookieParser = require('cookie-parser');
-require('dotenv').config({ path: '.variables.env' });
+require('dotenv').config({ path: '.env' });
 
 const helpers = require('./helpers');
 
