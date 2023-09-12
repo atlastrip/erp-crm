@@ -7,7 +7,7 @@
   },
   {
     "settingKey": "defaultTax",
-    "settingValue": 0.19,
+    "settingValue": 0.2,
     "valueType": "number",
     "isCoreSetting": true
   },
