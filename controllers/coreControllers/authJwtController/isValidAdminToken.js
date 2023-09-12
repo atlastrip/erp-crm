@@ -8,6 +8,7 @@ require('dotenv').config({ path: '.env' });
 
 const isValidAdminToken = async (req, res, next) => {
   try {
+    console.log({ 'req.cookies': req.cookies });
     const token = req.cookies.token;
 
     if (!token)
