@@ -69,9 +69,11 @@ const login = async (req, res) => {
     ).exec();
 
     console.log({
+      token,
       cookie: {
         maxAge: req.body.remember ? 365 * 24 * 60 * 60 * 1000 : null, // Cookie expires after 30 days
-        sameSite: 'Lax',
+        sameSite: app.get('env') === 'development' ? true : 'none',
+        secure: app.get('env') === 'development' ? false : true,
         httpOnly: true,
         secure: true,
         domain: req.hostname,
